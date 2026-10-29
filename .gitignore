@@ -55,3 +55,10 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+*.iml
+.idea_modules/
+*.DotSettings.user
