@@ -1,0 +1,28 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:capy_desktop_pet.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="450"
+        x:Class="capy_desktop_pet.Views.MainWindow"
+        x:DataType="vm:MainViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="capy_desktop_pet"
+        WindowDecorations="Full"
+        Background="Transparent"
+        Width="800"
+        Height="600"
+        WindowStartupLocation="CenterOwner">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainViewModel />
+    </Design.DataContext>
+
+    <Canvas>
+        <Image Source="../Assets/Capy.png" ZIndex="1" Canvas.Bottom="0" />
+        <Image Source="../Assets/grass.png" ZIndex="0" Canvas.Bottom="0" />
+    </Canvas>
+    
+</Window>
