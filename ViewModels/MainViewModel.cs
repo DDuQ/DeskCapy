@@ -1,4 +1,5 @@
 using CommunityToolkit.Mvvm.ComponentModel;
+using ViewModels;
 
 namespace capy_desktop_pet.ViewModels;
 

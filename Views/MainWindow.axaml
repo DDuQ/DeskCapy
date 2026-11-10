@@ -3,6 +3,7 @@
         xmlns:vm="using:capy_desktop_pet.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:global="clr-namespace:"
         mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="450"
         x:Class="capy_desktop_pet.Views.MainWindow"
         x:DataType="vm:MainViewModel"
@@ -20,9 +21,9 @@
         <vm:MainViewModel />
     </Design.DataContext>
 
-    <Canvas>
-        <Image Source="../Assets/Capy.png" ZIndex="1" Canvas.Bottom="0" />
-        <Image Source="../Assets/grass.png" ZIndex="0" Canvas.Bottom="0" />
-    </Canvas>
+    <Canvas >
+        <global:RandomMovement Canvas.Left="0" Canvas.Bottom="0"/>
+        <Image Source="../Assets/grass.png" ZIndex="-1" Canvas.Bottom="0" />
+    </Canvas >
     
 </Window>
